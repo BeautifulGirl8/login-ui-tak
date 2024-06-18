@@ -1,18 +1,25 @@
 *{
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
     box-sizing: border-box;
 
 }
 
-body{
+html{
+  overflow: hidden;
+}
 
+.body{
+ margin: 0;
+ height: 100vh;
+ width: 100vw;
 }
 /* container */
 .container{
     display: flex;
-    height: 500px;
-    width: 800px;
+    flex-direction: flex-row;
+   max-height: 75vh;
+    max-width: 600px;
     /* border: 1px solid rgb(188, 12, 123); */
     margin: auto;
     margin-top: 50px;
@@ -22,25 +29,32 @@ body{
     
 }
     
+.left{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 
 /* login Form */
 .form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
     align-items: center;
     background-color: lemonchiffon;
+    flex-grow: 1;
 }
     
 .form h2{
     font-size: 4rem;
     font-family: cursive, fantasy;
-    margin: 40px;
+    /* margin: 40px; */
     text-wrap: 20px;
     text-decoration-color: aqua;
 }
 
 .box{
+  display: flex;
     padding: 12px;
     width: 65%;
     margin: 15px;
@@ -51,7 +65,7 @@ body{
 
 #submit{
     padding: 12px 30px;
-    width: 40%
+    width: 40%;
     margin-top: 40px;
     background-color: paleturquoise;
      
@@ -76,27 +90,33 @@ body{
 }
 
 .form a:hover{
-    color: #560f59
+    color: #560f59;
 }
 
 /* Right Side*/ 
 .side{
     display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 128%;
-    height: 2px;
-    top: -20px;
+    height: auto;
+    /*justify-content: center; */
+    /* align-items: end; */
+    width: 50%;
+    /* height: 2px; */
+    /* top: -20px; */
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
-.side img{
-    width: 400px;
-    height: 504px;
-}
+/*.cat{
+    width: 5%;
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 2;
+} */
 
 /* trying whats on youtu */
-body {
-background-color:rgb(181, 237, 218)
+.body {
+background-color:rgb(181, 237, 218);
 
 }
 
@@ -153,5 +173,3 @@ background-color:rgb(181, 237, 218)
   }
 
 </style>
-/*chosen color for background: rgb(239, 106, 195), rgb(181, 237, 218)*/
- 
